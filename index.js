@@ -7,12 +7,12 @@ const path = require('path');
 		top.child.forEach(major => {
 			major.child.forEach(minor => {
 				let zip = {};
-				zip.major_region = major.name;
-				zip.major_id = major.id;
-				zip.minor_id = minor.id;
-				zip.minor_region = minor.name;
-				zip.top_region = top.name;
-				zip.top_id = top.id;
+				zip.majorRegionName = major.name;
+				zip.majorRegionId = major.id;
+				zip.minorRegionId = minor.id;
+				zip.minorRegionName = minor.name;
+				zip.topRegionName = top.name;
+				zip.topRegionId = top.id;
 				refactor_zips.push(zip);
 			});
 		});
